@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace SalesWebMVC.Controllers
 {
+    // Home < prefixo do controlador << e os métodos são o nome das actions
     public class HomeController : Controller
     {
         public IActionResult Index() {
@@ -16,7 +17,7 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult About() {
             ViewData["Message"] = "Your application description page.";
-
+            ViewData["Fixa"] = "Email ";
             return View();
         }
 

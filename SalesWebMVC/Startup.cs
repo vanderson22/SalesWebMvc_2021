@@ -44,7 +44,10 @@ namespace SalesWebMVC
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            /*
+             * Configuração básica de rotas 
+             * ex : https://localhost:5001/Home/Privacy    << controlador HOME ação index...id opcional
+             */
             app.UseMvc(routes => {
                 routes.MapRoute(
                     name: "default",
